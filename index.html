@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<title>Html-Cs-Js</title>
+<meta charset = "utf8">
+<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+<style>
+body{
+background-color: greenyellow;
+}
+label{
+font-family: Arial;
+font-size: 18px;
+color: blue;
+}
+input{
+border-radius: 5px;
+border: black solid thin;
+height: 5px.
+width: 200px;
+padding: 10x;
+color: blue;
+}
+button{
+color:blue;
+background-color: yellow;
+}
+.resposta{
+color: red;
+}
+div{
+border-radius:  5px;
+border: black solid thin;
+height: 200px;
+width: 220px;
+padding: 10px;
+background-color: #ffff00;
+}
+
+
+
+</style>
+<script>
+var exibirNome =  function (){
+var meuLabel = document.getElementById("resultado");
+var nomeInput = document.getElementById("nome");
+var senhaInput = document.getElementById("senha");
+if ("secreto" !== senhaInput.value){
+meuLabel.innerHTML = "Senha Inválida!";
+}else{
+meuLabel.innerHTML = nomeInput.value;
+}
+};
+
+
+
+</script>
+</head>
+
+<body>
+<hr>
+<div>
+
+<label>Digite seu nome:</label>
+<input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+<br>
+<label>Digite sua senha</label>
+<input type="password" id="senha" name="senha" placeholder="Digite sua senha"/>
+<br>
+<button type="button" onclick="exibirNome()">Ok</button>
+<p><label id="resultado" class="resposta"></label></p>
+</div>
+<hr>
+
+</body>
+</html>
